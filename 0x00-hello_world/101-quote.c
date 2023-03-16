@@ -2,7 +2,7 @@
 /**
  * main - Entry point
  * Description: Print what inside str_p arr using while loop
- * Return: 0
+ * Return: 1
  */
 int main(void)
 {
