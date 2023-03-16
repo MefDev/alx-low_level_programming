@@ -1,5 +1,9 @@
 #include <stdio.h>
-/* Print exactly what inside puts function*/
+/**
+ * main - Entry point
+ * Description: Print exactly what inside the puts function
+ * Return: 0
+ */
 int main(void)
 {
 puts("\"Programming is like building a multilingual puzzle");
