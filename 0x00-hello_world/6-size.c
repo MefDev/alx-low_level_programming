@@ -1,7 +1,8 @@
 #include <stdio.h>
 /**
  * main - Entry point
- * Description: Print the size of various types on the computer it is compiled and run on 
+ * Description: Print the size of various types on the computer it is
+ * compiled and run on
  * Return: 0
  */
 int main(void)
@@ -14,7 +15,7 @@ int size_float = sizeof(float);
 printf("Size of a char: %i byte(s)\n", size_char);
 printf("tize of an int: %i byte(s)\n", size_int);
 printf("Size of a long int: %i byte(s)\n", size_long_int);
-printf("Size of a long long int: %i  byte(s)\n", size_long_long_int);
+printf("Size of a long long int: %i byte(s)\n", size_long_long_int);
 printf("Size of a float: %i byte(s)\n", size_float);
 return (0);
 }
