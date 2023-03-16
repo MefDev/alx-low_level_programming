@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-char str_p[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+char str_p[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
 int length = sizeof(str_p);
 int i = 0;
 while (i < length)
