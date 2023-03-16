@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <unistd.h>
 /**
  * main - Entry point
  * Description: Print what inside str_p arr using while loop
@@ -6,13 +7,8 @@
  */
 int main(void)
 {
-char str_p[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+char str_p[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
 int length = sizeof(str_p);
-int i = 0;
-while (i < length)
-{
-putchar(str_p[i]);
-i++;
-}
+write(1, &str_p, length);
 return (1);
 }
