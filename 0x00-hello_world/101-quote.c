@@ -8,7 +8,7 @@
 int main(void)
 {
 char str_p[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
-int length = sizeof(str_p - 1);
+int length = sizeof(str_p) - 1;
 write(1, &str_p, length);
 return (1);
 }
