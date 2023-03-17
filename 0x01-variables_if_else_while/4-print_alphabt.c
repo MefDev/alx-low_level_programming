@@ -9,10 +9,8 @@ int main(void)
 {
 	char alpha_letter;
 
-	alpha_letter = 'a';
-	while (alpha_letter < 'z')
+	for (alpha_letter = 'a'; alpha_letter <= 'z'; alpha_letter = alpha_letter + 1)
 	{
-		alpha_letter = alpha_letter + 1;
 		if ((alpha_letter == 'q') || (alpha_letter == 'e'))
 			continue;
 		putchar(alpha_letter);
