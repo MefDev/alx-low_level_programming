@@ -15,28 +15,28 @@ int main(void)
 	first_d = 0;
 	second_d = 1;
 	third_d = 2;
-	for (digit = 0; digit < 30; digit = digit + 1)
+	for (digit = 0; digit < 120; digit = digit + 1)
 	{
 		putchar(first_d + '0');
 		putchar(second_d + '0');
 		putchar(third_d + '0');
-		if (digit != 29)
+		third_d++;
+		if (digit != 119)
 		{
 			putchar(',');
 			putchar(' ');
 		}
-		third_d++;
-		if (third_d == (10))
+		if (third_d == 9 + 1)
+		{
+			second_d++;
+			third_d = second_d + 1;
+		}
+		if (second_d == 8 + 1)
 		{
 			first_d++;
-			second_d = 1;
-			second_d += first_d;
-			third_d = 2;
-			third_d += second_d;
-			if (digit == 28)
-				third_d -=1;
+			second_d = first_d + 1;
+			third_d = second_d + 1;
 		}
-		
 
 	}
 	putchar('\n');
