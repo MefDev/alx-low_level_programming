@@ -1,6 +1,21 @@
 #include <stdio.h>
+#include "main.h"
+/**
+ * main - Entry point
+ * Description: Print _putchar using putchar
+ * Return: 1
+ */
 int main(void)
 {
+	int i;
 
-	printf("_putchar\n");
+	char arr[] = "_putchar";
+	int length = sizeof(arr) - 1;
+
+	for (i = 0; i<length; i++)
+	{
+		putchar(arr[i]);
+	}
+	putchar('\n');
+	
 }
