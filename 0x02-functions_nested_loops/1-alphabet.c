@@ -5,12 +5,6 @@
  * Description: prints the alphabet, in lowercase, followed by a nl
  * Return: 0
  */
-int main(void)
-{
-	print_alphabet();
-	return (0);
-
-}
 void print_alphabet(void)
 {
 	char first_letter = 'a';
