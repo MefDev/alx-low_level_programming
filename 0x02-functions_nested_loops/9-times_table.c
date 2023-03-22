@@ -11,8 +11,11 @@ void times_table(void)
 	for (rows = 0; rows < 10; rows++)
 	{
 		putchar('0');
-		if (rows != 9)
+		if (rows <= 9)
+		{
 			putchar(',');
+			putchar(' ');
+		}
 		for (columns = 1; columns < 10; columns++)
 		{	printf("%i", columns * rows);
 			if (columns != 9)
