@@ -20,7 +20,7 @@ int jack_bauer(void)
 			_putchar(colon_smbl);
 			_putchar((minute / 10) + '0');
 			_putchar((minute % 10) + '0');
-			putchar('\n');
+			_putchar('\n');
 		}
 	}
 	return (0);
