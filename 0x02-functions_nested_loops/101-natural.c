@@ -9,12 +9,13 @@ int main(void)
 	int sum;
 	int three;
 	int five;
+	int i;
 
 	sum = 0;
 	three = 3;
 	five = 5;
 
-	for (int i = 1; i < 1024; i++)
+	for (i = 1; i < 1024; i++)
 	{
 		if (i % three == 0 || i % five == 0)
 		{
