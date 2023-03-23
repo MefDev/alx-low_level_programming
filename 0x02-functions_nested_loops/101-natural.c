@@ -7,6 +7,7 @@
 int main(void)
 {
 	int sum;
+	int i;
 	int three;
 	int five;
 	int mutliple_three;
@@ -17,7 +18,7 @@ int main(void)
 	five = 5;
 	mutliple_three = 0;
 	multiple_five = 0;
-	for (int i = 1; i < 1024; i++)
+	for (i = 1; i < 1024; i++)
 	{
 		mutliple_three = three * i;
 		if (mutliple_three < 1024)
