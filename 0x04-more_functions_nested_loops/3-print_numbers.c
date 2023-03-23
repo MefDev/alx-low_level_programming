@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * mul - Multiply two numbers
- * Return: void
+ * print_numbers - Print from 0 to 9
+ * Return: nothing
  */
 void print_numbers(void)
 {
@@ -13,5 +13,4 @@ void print_numbers(void)
 		_putchar(i + '0');
 	}
 	_putchar('\n');
-	return;
 }
