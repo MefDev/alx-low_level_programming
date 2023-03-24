@@ -15,16 +15,15 @@ void more_numbers(void)
 	{
 		for (i = 0; i < 15; i++)
 		{
-			if (i < 10)
-				_putchar(i + '0');
-			else
+			ones = i;
+			if (i > 9)
 			{
 				tens = i / 10;
 				ones = i % 10;
 				_putchar(tens + '0');
-				_putchar(ones + '0');
 			}
+			_putchar(ones + '0');
 		}
-		printf("\n");
+		_putchar('\n');
 	}
 }
