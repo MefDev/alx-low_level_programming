@@ -9,16 +9,21 @@ void print_diagonal(int n)
 {
 	int i;
 
-	for (i = 0; i <  n; i++)
+	if (n > 0)
 	{
-		_putchar('/');
-		if (i != n - 1)
+		for (i = 0; i <  n; i++)
 		{
-			_putchar('\n');
-			add_space(i);
+			_putchar('/');
+			if (i != n - 1)
+			{
+				_putchar('\n');
+				add_space(i);
+			}
 		}
+		_putchar('\n');
 	}
-	_putchar('\n');
+	else
+		_putchar('\n');
 }
 /**
  * add_space - add space  n times
