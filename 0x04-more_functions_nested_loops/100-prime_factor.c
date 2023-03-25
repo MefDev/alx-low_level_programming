@@ -5,7 +5,7 @@
  */
 int main(void)
 {
-	long long testval = 1231952;
+	long testval = 612852475143;
 	int factor = 2;
 
 	while (testval > 1)
@@ -17,6 +17,6 @@ int main(void)
 		}
 		factor++;
 	}
-	printf("%d", factor);
+	printf("%d\n", factor);
 	return (0);
 }
