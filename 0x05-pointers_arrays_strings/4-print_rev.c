@@ -8,9 +8,18 @@
 
 void print_rev(char *s)
 {
-	int len = _strlen(s) - 1;
-	int i = len;
+	int len;
+	int iterate;	
+	int i;
 
+	len = 0, iterate = 0;
+	while (s[iterate] != '\0')
+	{
+		len++;
+		iterate++;
+	}
+
+	i = len - 1;
 	while (s[i] != '\0')
 	{
 		char ltr = *(s + i);
