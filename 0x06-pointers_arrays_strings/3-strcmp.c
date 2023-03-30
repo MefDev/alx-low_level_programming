@@ -19,11 +19,11 @@ int _strcmp(char *s1, char *s2)
 	nd_str = char_count(s2);
 	if (st_str < nd_str)
 	{
-		val_returned = -15;
+		val_returned = s1[0] - s2[0];
 	}
 	else if (st_str > nd_str)
 	{
-		val_returned = 15;
+		val_returned = s1[0] - s2[0];
 	}
 	else
 	{
