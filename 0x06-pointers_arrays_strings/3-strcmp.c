@@ -10,46 +10,22 @@
 
 int _strcmp(char *s1, char *s2)
 {
-	int st_str;
-	int nd_str;
-	int val_returned;
-
-	val_returned = 0;
-	st_str = char_count(s1);
-	nd_str = char_count(s2);
-
-	if (st_str < nd_str)
-	{
-		val_returned = s1[0] - s2[0];
-	}
-	else if (st_str > nd_str)
-	{
-		val_returned = s1[0] - s2[0];
-	}
-	else
-	{
-		val_returned = 0;
-	}
-	return (val_returned);
-}
-
-/**
- * char_count - count how many chars
- * @str: the str to count its chars
- * Return: return how many chars
- */
-
-int char_count(char *str)
-{
-	int counter;
 	int i;
+	int val;
 
 	i = 0;
-	counter = 0;
-	while (str[i] != '\0')
+	while(s1[i] != '\0')
 	{
-		counter++;
+		if (s1[i] - s2[i] == 0)
+		{
+			val = s1[i] - s2[i];
+		}
+		else
+		{
+			val = s1[i] - s2[i];
+			break;
+		}
 		i++;
 	}
-	return (counter);
+	return val;
 }
