@@ -17,6 +17,7 @@ int _strcmp(char *s1, char *s2)
 	val_returned = 0;
 	st_str = char_count(s1);
 	nd_str = char_count(s2);
+
 	if (st_str < nd_str)
 	{
 		val_returned = s1[0] - s2[0];
