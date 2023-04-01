@@ -1,11 +1,4 @@
 #include <stdio.h>
-
-/**
- * main - see the magic in the air
- * Return: 0 if success
- */
-
-int main(void)
 {
   int n;
   int a[5];
