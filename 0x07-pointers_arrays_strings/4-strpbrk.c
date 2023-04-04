@@ -3,7 +3,7 @@
 /**
  * _strpbrk - search a string for any of a set of byt
  * @s: the string
- * @c: the character to locate
+ * @accept: the character to locate
  * Return: The changed pointer
  */
 
