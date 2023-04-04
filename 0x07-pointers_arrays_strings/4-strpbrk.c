@@ -7,12 +7,15 @@
  * Return: The changed pointer
  */
 
-char *_strpbrk(char *s, char c)
+char *_strpbrk(char *s, char *accept)
 {
+	int i;
+
 	for (; *s >= '\0'; s++)
 	{
-		for (j = 0; accept[i] != '\0'; j++)
-			return (s);
+		for (i = 0; accept[i] != '\0'; i++)
+			if (*s == accept[i])
+				return (s);
 	}
 	return (0);
 }
