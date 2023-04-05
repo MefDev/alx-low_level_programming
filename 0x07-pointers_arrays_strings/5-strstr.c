@@ -21,5 +21,6 @@ char *_strstr(char *haystack, char *needle)
 	}
 	if (counter == length)
 		return (needle);
-	return (NULL);
+	else
+		return (NULL);
 }
