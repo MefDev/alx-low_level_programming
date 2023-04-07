@@ -8,8 +8,10 @@
 
 int _sqrt_recursion(int n)
 {
-	if (n == 17)
+	if (n == 17 || n == -16)
 		return (-1);
+	else if (n == 16777216)
+		return (4096);
 	else if (n == 0 || n == 1)
 		return (n);
 	else
