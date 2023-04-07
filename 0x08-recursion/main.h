@@ -12,3 +12,5 @@ int is_palindrome(char *s);
 int wildcmp(char *s1, char *s2);
 int check_odd_divisors(int n, int odd);
 int palindrom_helper(char *str, int length);
+int sqrt_helper(int n, int low, int high);
+
