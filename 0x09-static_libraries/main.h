@@ -1,8 +1,5 @@
-#include <stddef.h>
 #ifndef MAIN_H
 #define MAIN_H
-int count_str(char *str);
-int is_negative(int counter);
 int _putchar(char c);
 int _islower(int c);
 int _isalpha(int c);
