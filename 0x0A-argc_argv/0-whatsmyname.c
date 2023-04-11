@@ -9,5 +9,5 @@
 int main(int argc, char *argv[])
 {
 	return (argc == 1 ? printf("%s\n", argv[0]) :
-		printf("%s", "No args found"));
+		(0));
 }
