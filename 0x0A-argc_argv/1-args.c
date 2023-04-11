@@ -8,6 +8,7 @@
  */
 int main(int argc, char *argv[])
 {
-	return (argv[0] !=  0 ? printf("%d\n", argc - 1) :
-		printf("%s", "No args found"));
+	if (argv[0] != 0)
+		printf("%d\n", argc - 1);
+	return (0);
 }
