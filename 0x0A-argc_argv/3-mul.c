@@ -1,16 +1,16 @@
 #include "main.h"
 
 /**
- * main - print the two args followed by nl
+ * main - Mutliply the two args followed by nl
  * @argc: count how many args on argv array
  * @argv: the argments given by the user on the CLI
- * Return: success 0
+ * Return: success 0 and 1 is failure
  */
 int main(int argc, char *argv[])
 {
 	int sum;
 
-	if (argc != 2)
+	if (argc <= 2 || argc > 3)
 	{
 		printf("Error\n");
 		return (1);
