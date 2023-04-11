@@ -11,14 +11,17 @@ int main(int argc, char *argv[])
 	int i, rest, cents;
 	int values[] = {25, 10, 5, 2, 1};
 
-	if (argv[0] == 0 || argc != 2)
+	if (argc != 2)
 	{
 		printf("Error\n");
 		return (1);
 	}
-	if (argc < 0)
-		return (0);
 	rest = atoi(argv[1]);
+	if (rest < 0)
+	{
+		printf("%d\n", 0);
+		return (1);
+	}
 	cents = 0;
 	i = 0;
 	while (i < COIN_NUM)
