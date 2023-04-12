@@ -40,6 +40,7 @@ int main(int argc, char *argv[])
 		else
 			i++;
 	}
+	printf("%d\n", cents)
 	return (0);
 }
 
