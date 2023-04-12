@@ -11,9 +11,11 @@ char *_strdup(char *str)
 	unsigned int i, length;
 	char *p;
 
-	p  = malloc(sizeof(char) * strlen(str));
-	if (p == 0 || str == NULL)
-		return (NULL);
+	if (str == NULL)
+		return (str);
+	p  = malloc(sizeof(char) * strlen(str) + 1);
+	if (p == NULL)
+		return (p);
 	i = 0;
 	length = strlen(str);
 	while (i < length)
