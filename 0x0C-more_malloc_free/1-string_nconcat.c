@@ -24,14 +24,14 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	else
 		size = n;
 
-	ptr =  malloc(strlen(s1) + 1 + size + 1);
+	ptr =  malloc(strlen(s1) + 1 + size);
 	if (ptr == NULL)
 		return (NULL);
 	for (i = 0; i < strlen(s1); i++)
 	{
 		ptr[i] = s1[i];
 	}
-	for (j = 0; j <= size; j++, i++)
+	for (j = 0; j < size; j++, i++)
 	{
 		ptr[i] = s2[j];
 	}
