@@ -1,3 +1,5 @@
+#include <stdlib.h>
+#include <string.h>
 #ifndef DOG
 #define DOG
 /**
@@ -15,5 +17,4 @@ struct dog
 	char *owner;
 };
 #endif
-struct dog DOG;
 void init_dog(struct dog *d, char *name, float age, char *owner);
