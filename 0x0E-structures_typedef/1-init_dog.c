@@ -11,14 +11,14 @@
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
 	if (d == NULL)
-		exit(EXIT_FAILURE);
+		return;
 	d->name = malloc((strlen(name) + 1) * sizeof(char));
 	if (d->name == NULL)
-		exit(EXIT_FAILURE);
+		return;
 	d->name = name;
 	d->owner = malloc((strlen(owner) + 1) * sizeof(char));
 	if (d->owner == NULL)
-		exit(EXIT_FAILURE);
+		return;
 	d->owner = owner;
 	d->age = age;
 }
