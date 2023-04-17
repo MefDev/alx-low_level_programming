@@ -10,9 +10,15 @@
 
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-	d = malloc(sizeof(*d));
+	if (d == NULL)
+		return;
+	d->name = malloc((strlen(name) + 1) * sizeof(char));
+	if (d->name == NULL)
+		return;
 	d->name = name;
-	d->age = age;
+	d->owner = malloc((strlen(owner) + 1) * sizeof(char));
+	if (d->owner == NULL)
+		return;
 	d->owner = owner;
+	d->age = age;
 }
-
