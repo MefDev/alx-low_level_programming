@@ -1,8 +1,8 @@
-#include <stdlib.h>
-#include <string.h>
-#include <stdio.h>
 #ifndef DOG
 #define DOG
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 /**
  * struct dog - Short desciption
  * @name: The name of the dog
@@ -17,8 +17,8 @@ struct dog
 	float age;
 	char *owner;
 } dog;
-#endif
 typedef struct dog dog_t;
 void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
+#endif
 
