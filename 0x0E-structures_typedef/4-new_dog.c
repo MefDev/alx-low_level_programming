@@ -17,11 +17,11 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	d->name = malloc((strlen(name) + 1) * sizeof(char));
 	if (d->name == NULL)
-		exit(0);
+		return (NULL);
 	strcpy(d->name, name);
 	d->owner = malloc((strlen(owner) + 1) * sizeof(char));
 	if (d->owner == NULL)
-		exit(0);
+		return (NULL);
 	strcpy(d->owner, owner);
 	d->age = age;
 	return (d);
