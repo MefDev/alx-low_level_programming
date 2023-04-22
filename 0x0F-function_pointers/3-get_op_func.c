@@ -1,12 +1,25 @@
-#include "function_pointers.h"
+#include "3-calc.h"
 
-/**
- * print_name - Print a name
- * @name: the name to print
- * @f: a function to callback
- */
-
-void print_name(char *name, void (*f)(char *))
+int (*get_op_func(char *s))(int, int)
 {
-	
+	int i;
+
+	op_t ops[] = {
+		{"+", op_add},
+		{"-", op_sub},
+		{"*", op_mul},
+		{"/", op_div},
+		{"%", op_mod},
+		{NULL, NULL}
+	};
+	i = 0;
+	while (ops[i].op != NULL)
+	{
+		if (s == ops[i].op)
+		{
+			return ops[i].f;
+		}
+		i++;
+	}
+	return NULL;
 }
