@@ -11,14 +11,14 @@ unsigned int binary_to_uint(const char *b)
 	int i;
 	unsigned int convert_num;
 
-	if (b == NULL)
+	if (!b)
 		return (0);
 	convert_num = 0;
-	for (i = 0; b[i] != NULL; i++)
+	for (i = 0; b[i]; i++)
 	{
-		if (b[i] != 0 || b[i] != 1)
+		if (b[i] != '0' && b[i] != '1')
 			return (0);
-		convet_num =  (convert_nul << 1) + (b[i] - 48)
+		convert_num =  (convert_num << 1) + (b[i] - 48);
 	}
-	return (convet_num);
+	return (convert_num);
 }
