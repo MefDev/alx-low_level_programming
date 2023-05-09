@@ -12,7 +12,7 @@
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	FILE *fptr;
-	int counter;
+	size_t counter;
 	char *buffer;
 	size_t fBuffer;
 
@@ -29,11 +29,12 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	}
 	counter = fread(buffer, sizeof(char), letters, fptr);
 	fBuffer = fwrite(buffer, sizeof(char), letters, fptr);
-	if (fBuffer)
+	if (fBuffer == counter)
 	{
-		free(buffer);
 		return (0);
 	}
 	printf("%s", buffer);
+	free(buffer);
+	fclose(fptr);
 	return (counter);
 }
