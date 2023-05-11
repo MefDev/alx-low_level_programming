@@ -14,11 +14,10 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	FILE *fptr;
 	size_t counter;
 	char *buffer;
-	size_t fBuffer;
 
 	if (!filename)
 		return (0);
-	buffer = malloc(sizeof(char) * letters);
+	buffer = malloc(sizeof(char) * letters + 1);
 	if (!buffer)
 		return (0);
 	fptr = fopen(filename, "r");
@@ -28,11 +27,13 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	}
 	counter = fread(buffer, sizeof(char), letters, fptr);
-	fBuffer = fwrite(buffer, sizeof(char), letters, fptr);
-	if (fBuffer == counter)
+	if (ferror(fptr))
 	{
+		free(buffer);
+		fclose(fptr);
 		return (0);
 	}
+	buffer[counter] = '\0';
 	printf("%s", buffer);
 	free(buffer);
 	fclose(fptr);
