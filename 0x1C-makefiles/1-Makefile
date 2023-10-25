@@ -1,0 +1,9 @@
+# Make files for easy compilation
+SRC = main.c school.c
+CC = gcc
+all: school
+
+school:
+	$(CC) $(SRC) -o school
+.PHONY: all
+
