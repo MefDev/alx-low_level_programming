@@ -1,0 +1,9 @@
+# Make files for easy compilation
+SRC = main.c school.c
+CC = gcc
+OBJ = $(SRC:.c=.o)
+NAME = school
+.PHONY: all
+all: $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)	
+
