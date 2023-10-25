@@ -1,4 +1,7 @@
 # Make files for easy compilation
+all: school
+
 school:
 	gcc main.c school.c -o school
+.PHONY: all
 
